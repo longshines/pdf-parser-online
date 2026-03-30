@@ -1,0 +1,2 @@
+gradio==4.20.0
+opendataloader-pdf[hybrid]>=2.2.0

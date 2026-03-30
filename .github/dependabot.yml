@@ -1,0 +1,12 @@
+version: 2
+updates:
+  # 监控 pip (Python) 依赖
+  - package-ecosystem: "pip"
+    # requirements.txt 所在的目录
+    directory: "/"
+    schedule:
+      # 每天检查一次更新
+      interval: "daily"
+    # 只监控特定的包，避免其他乱七八糟的包更新干扰
+    allow:
+      - dependency-name: "opendataloader-pdf"
