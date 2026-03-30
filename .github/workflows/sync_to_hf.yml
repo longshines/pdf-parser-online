@@ -1,16 +1,19 @@
 name: Sync to Hugging Face Hub
 on:
   push:
-    branches: [main] # 当主分支有代码推送时触发
+    branches: [master] # 当主分支有代码推送时触发
 
   # 允许手动触发工作流
   workflow_dispatch:
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   sync-to-hub:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
           lfs: true
