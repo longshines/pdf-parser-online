@@ -1,2 +1,2 @@
 gradio>=4.44.1
-opendataloader-pdf[hybrid]>=2.5.20
+opendataloader-pdf[hybrid]>=2.5.21
